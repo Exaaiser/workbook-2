@@ -18,7 +18,7 @@ public class FullNameParser {
             System.out.println("First name: " + nameParts[0]);
             System.out.println("Middle name: ");
             System.out.println("Last name: " + nameParts[1]);
-        } else if (nameParts.length == 3) { // "first middle last" formatı
+        } else if (nameParts.length == 3) {
             System.out.println("First name: " + nameParts[0]);
             System.out.println("Middle name: " + nameParts[1]);
             System.out.println("Last name: " + nameParts[2]);
