@@ -1,18 +1,25 @@
 package com.pluralsight;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class HighScoreWins {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please enter a game score: ");
-        String input = scanner.nextLine();
+        String userInput = scanner.nextLine();
 
         System.out.print("Please enter your side: ");
         String team = scanner.nextLine();
 
-        String[] parts = input.split("\\|");
+        String[] inputSplit = userInput.split(Pattern.quote("|"));
+
+        String team = inputSplit[0].split(Pattern.quote(":"));
+        String home = team[0];
+
+
+        String[] parts = input.split("\\|//");
         String[] teams = parts[0].split(":");
         String[] scores = parts[1].split(":");
 
