@@ -4,10 +4,10 @@ public class CellPhone {
     public int serialNumber;
     public String model;
     public String carrier;
-    public double number;
-    public  String owner;
+    public String number;
+    public String owner;
 
-    public CellPhone(int serialNumber, String model, String carrier, double number, String owner) {
+    public CellPhone(int serialNumber, String model, String carrier, String number, String owner) {
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
@@ -16,7 +16,11 @@ public class CellPhone {
 
     }
 
-        public int getSerialNumber() {
+    public CellPhone() {
+
+    }
+
+    public int getSerialNumber() {
             return this.serialNumber;
         }
         public void setSerialNumber(int SerialNumber) {
@@ -31,14 +35,14 @@ public class CellPhone {
         public String getCarrier() {
             return this.carrier;
         }
-        public void setCarrier() {
-            this.carrier = "AT&T";
+        public void setCarrier(String carrier) {
+            this.carrier = "";
         }
-        public double getNumber() {
+        public String getNumber() {
             return this.number;
         }
-        public void setNumber(double number) {
-            this.number = 800 - 555 - 5555;
+        public void setNumber(String number) {
+            this.number = " ";
         }
         public String getOwner() {
             return owner;
